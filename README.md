@@ -13,17 +13,49 @@ This project includes **two unique Python-based humanizers**:
 
 Both versions leverage modern NLP tools such as **Transformers**, **spaCy**, **TextStat**, and **NLTK** for grammatical and stylistic refinement.
 
+## ✨ Features
+
+### 🌐 Web UI
+- **Easy-to-use interface** with Streamlit
+- **Two humanizer modes**: Balanced and Aggressive
+- **Multiple input methods**: Paste text, upload files, or use samples
+- **Real-time statistics**: See AI detection scores and improvement metrics
+- **Download & copy**: Save your humanized text easily
+- **Responsive design**: Works on desktop and mobile
+
+### 📓 Jupyter Notebooks
+- **Detailed implementation** of both humanizers
+- **Customizable parameters** for advanced users
+- **Step-by-step explanations** of the humanization process
+
 ---
 
 ## 🚀 Getting Started
 
-### Clone the Repository
+### Web UI (Recommended)
+
+The easiest way to use the AI Text Humanizer is through our **Streamlit web interface**:
+
 ```bash
-git clone https://github.com/<your-username>/AI-Text-Humanizer.git
-cd AI-Text-Humanizer
-```
-### Install Dependencies
+cd web_ui
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+streamlit run app.py
+```
+
+See the [Web UI Quick Start Guide](web_ui/QUICKSTART.md) for detailed instructions.
+
+### Jupyter Notebooks
+
+For advanced users who want to work with the code directly:
+
+```bash
+git clone https://github.com/AnikethBhosale/ai-humanizers.git
+cd ai-humanizers
+pip install -r requirements.txt
+```
+
+Then open `humanizer_balanced.ipynb` or `humanizer_aggressive.ipynb` in Jupyter.
 
 ## Tech Stack
 - Python 🐍
